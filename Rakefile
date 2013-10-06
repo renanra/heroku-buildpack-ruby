@@ -133,7 +133,7 @@ task "node:install", :version do |t, args|
     Dir.chdir(tmpdir) do |dir|
       FileUtils.rm_rf("#{tmpdir}/*")
 
-      sh "curl http://nodejs.org/dist/node-v#{version}.tar.gz -s -o - | tar vzxf -"
+      sh "curl http://nodejs.org/dist/v#{version}/node-v#{version}.tar.gz -s -o - | tar vzxf -"
 
       build_command = [
         "./configure --prefix #{prefix}",
