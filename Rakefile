@@ -2,7 +2,7 @@ require "fileutils"
 require "tmpdir"
 require 'hatchet/tasks'
 
-S3_BUCKET_NAME  = "heroku-buildpack-ruby"
+S3_BUCKET_NAME  = "renanra-heroku-buildpack-ruby"
 VENDOR_URL      = "https://s3.amazonaws.com/#{S3_BUCKET_NAME}"
 
 def s3_tools_dir
