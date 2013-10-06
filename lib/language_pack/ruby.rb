@@ -202,7 +202,6 @@ private
   # @note the value is memoized
   # @return [Array] list of Strings of the ruby versions available
   def ruby_versions
-    puts "RUBY_VERIONS: #{@ruby_versions.inspect}"
     return @ruby_versions if @ruby_versions
 
     Dir.mktmpdir("ruby_versions-") do |tmpdir|
